@@ -1,25 +1,18 @@
+import NavLinks from './NavLinks'
+
 const NavBar = () => {
 	return (
 		<nav className='nav'>
 			<div className='nav-desktop'>
 				<div className='nav-logo'>
 					<p className='nav-text'>
-						<i className='fas fa-tree'></i>Forest
+						<a href='#home' className='nav-text'>
+							<i className='fas fa-tree'></i>Forest
+						</a>
 					</p>
 				</div>
 				<div className='nav-links'>
-					<a href='#home' className='nav-bar'>
-						Home
-					</a>
-					<a href='#about-us' className='nav-bar'>
-						O nas
-					</a>
-					<a href='#offers' className='nav-bar'>
-						Oferta
-					</a>
-					<a href='contact.html' className='nav-bar'>
-						Kontakt
-					</a>
+					<NavLinks linksClass={'nav-bar'} />
 				</div>
 				<button className='bars'>
 					<i className='fas fa-bars'></i>
@@ -32,7 +25,16 @@ const NavBar = () => {
 					</p>
 				</div>
 				<div className='nav-links--mobile'>
-					<a href='#home' className='nav-bar--mobile'>
+					<NavLinks linksClass={'nav-bar--mobile'} />
+				</div>
+			</div>
+		</nav>
+	)
+}
+
+export default NavBar
+
+					/* <a href='#home' className='nav-bar--mobile'>
 						Home
 					</a>
 					<a href='#about-us' className='nav-bar--mobile'>
@@ -43,11 +45,4 @@ const NavBar = () => {
 					</a>
 					<a href='contact.html' className='nav-bar--mobile'>
 						Kontakt
-					</a>
-				</div>
-			</div>
-		</nav>
-	)
-}
-
-export default NavBar
+					</a> */

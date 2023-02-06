@@ -35,4 +35,11 @@ export const offersOptions = [
 	},
 ]
 
+export const navLinks = [
+	{id: 1, href: '#home', text: 'Home'},
+	{id: 2, href: '#about-us', text: 'O nas'},
+	{id: 3, href: '#offers', text: 'Oferta'},
+	{id: 4, href: 'contact.html', text: 'Kontakt'},
+]
+
 // {option1: 'Opcja 1 w pakiecie', option2: 'Opcja 2 w pakiecie'}
