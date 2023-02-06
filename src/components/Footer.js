@@ -1,3 +1,5 @@
+import FooterLinks from './FooterLinks'
+
 const Footer = () => {
 	return (
 		<footer>
@@ -8,29 +10,7 @@ const Footer = () => {
 					</p>
 				</div>
 				<div className='footer-text'>
-					<div className='footer-card'>
-						<p>O nas</p>
-						<ul>
-							<li>Historia</li>
-							<li>Parki</li>
-							<li>Opinie</li>
-						</ul>
-					</div>
-					<div className='footer-card'>
-						<p>Nasza firma</p>
-						<ul>
-							<li>Praca</li>
-							<li>Kadry</li>
-							<li>Zarząd</li>
-						</ul>
-					</div>
-					<div className='footer-card'>
-						<p>Dokumenty</p>
-						<ul>
-							<li>Wnioski</li>
-							<li>Rezerwacje</li>
-						</ul>
-					</div>
+					<FooterLinks />
 				</div>
 			</div>
 			<div className='footer-underline'></div>
@@ -38,7 +18,7 @@ const Footer = () => {
 				<p>
 					<i className='far fa-copyright'>
 						{' '}
-						<span className='footer-year'> </span>
+						<span className='footer-year'>{new Date().getFullYear()} </span>
 					</i>{' '}
 					Forest Group Company Ltd.
 				</p>
