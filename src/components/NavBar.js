@@ -1,47 +1,47 @@
 const NavBar = () => {
 	return (
-		<nav class='nav'>
-			<div class='nav-desktop'>
-				<div class='nav-logo'>
-					<p class='nav-text'>
-						<i class='fas fa-tree'></i>Forest
+		<nav className='nav'>
+			<div className='nav-desktop'>
+				<div className='nav-logo'>
+					<p className='nav-text'>
+						<i className='fas fa-tree'></i>Forest
 					</p>
 				</div>
-				<div class='nav-links'>
-					<a href='#home' class='nav-bar'>
+				<div className='nav-links'>
+					<a href='#home' className='nav-bar'>
 						Home
 					</a>
-					<a href='#about-us' class='nav-bar'>
+					<a href='#about-us' className='nav-bar'>
 						O nas
 					</a>
-					<a href='#offers' class='nav-bar'>
+					<a href='#offers' className='nav-bar'>
 						Oferta
 					</a>
-					<a href='contact.html' class='nav-bar'>
+					<a href='contact.html' className='nav-bar'>
 						Kontakt
 					</a>
 				</div>
-				<button class='bars'>
-					<i class='fas fa-bars'></i>
+				<button className='bars'>
+					<i className='fas fa-bars'></i>
 				</button>
 			</div>
-			<div class='nav-mobile active'>
-				<div class='nav-logo--mobile'>
-					<p class='nav-text--mobile'>
-						<i class='fas fa-tree'></i>Forest
+			<div className='nav-mobile active'>
+				<div className='nav-logo--mobile'>
+					<p className='nav-text--mobile'>
+						<i className='fas fa-tree'></i>Forest
 					</p>
 				</div>
-				<div class='nav-links--mobile'>
-					<a href='#home' class='nav-bar--mobile'>
+				<div className='nav-links--mobile'>
+					<a href='#home' className='nav-bar--mobile'>
 						Home
 					</a>
-					<a href='#about-us' class='nav-bar--mobile'>
+					<a href='#about-us' className='nav-bar--mobile'>
 						O nas
 					</a>
-					<a href='#offers' class='nav-bar--mobile'>
+					<a href='#offers' className='nav-bar--mobile'>
 						Oferta
 					</a>
-					<a href='contact.html' class='nav-bar--mobile'>
+					<a href='contact.html' className='nav-bar--mobile'>
 						Kontakt
 					</a>
 				</div>

@@ -1,14 +1,14 @@
 const Footer = () => {
 	return (
 		<footer>
-			<div class='footer-up'>
-				<div class='footer-logo'>
+			<div className='footer-up'>
+				<div className='footer-logo'>
 					<p>
-						<i class='fas fa-tree'></i> Forest
+						<i className='fas fa-tree'></i> Forest
 					</p>
 				</div>
-				<div class='footer-text'>
-					<div class='footer-card'>
+				<div className='footer-text'>
+					<div className='footer-card'>
 						<p>O nas</p>
 						<ul>
 							<li>Historia</li>
@@ -16,7 +16,7 @@ const Footer = () => {
 							<li>Opinie</li>
 						</ul>
 					</div>
-					<div class='footer-card'>
+					<div className='footer-card'>
 						<p>Nasza firma</p>
 						<ul>
 							<li>Praca</li>
@@ -24,7 +24,7 @@ const Footer = () => {
 							<li>Zarząd</li>
 						</ul>
 					</div>
-					<div class='footer-card'>
+					<div className='footer-card'>
 						<p>Dokumenty</p>
 						<ul>
 							<li>Wnioski</li>
@@ -33,12 +33,12 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<div class='footer-underline'></div>
-			<div class='footer-down'>
+			<div className='footer-underline'></div>
+			<div className='footer-down'>
 				<p>
-					<i class='far fa-copyright'>
+					<i className='far fa-copyright'>
 						{' '}
-						<span class='footer-year'> </span>
+						<span className='footer-year'> </span>
 					</i>{' '}
 					Forest Group Company Ltd.
 				</p>

@@ -2,9 +2,9 @@ const Home = () => {
     return (
       
         <section id="home">
-            <div class="hero-img">
-                <div class="hero-shadow"></div>
-                <div class="hero-text">
+            <div className="hero-img">
+                <div className="hero-shadow"></div>
+                <div className="hero-text">
                     <p>Forest Group</p>
                     <h1>Najpiękniejszy park w Twojej okolicy!</h1>
                 </div>
