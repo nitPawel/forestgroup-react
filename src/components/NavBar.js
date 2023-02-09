@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import NavLinks from './NavLinks'
 
 const NavBar = () => {
@@ -6,9 +7,11 @@ const NavBar = () => {
 			<div className='nav-desktop'>
 				<div className='nav-logo'>
 					<p className='nav-text'>
-						<a href='#home' className='nav-text'>
-							<i className='fas fa-tree'></i>Forest
-						</a>
+						<Link to={'/'} className='nav-text'><i className='fas fa-tree'></i>Forest</Link> 
+						{/* <Link to={`contacts/1`}>Your Name</Link> */}
+						{/* <a href='#home' className='nav-text'>
+							
+						</a> */}
 					</p>
 				</div>
 				<div className='nav-links'>
@@ -34,7 +37,7 @@ const NavBar = () => {
 
 export default NavBar
 
-					/* <a href='#home' className='nav-bar--mobile'>
+/* <a href='#home' className='nav-bar--mobile'>
 						Home
 					</a>
 					<a href='#about-us' className='nav-bar--mobile'>

@@ -12,6 +12,7 @@ body {
 }
 .nav {
 	position: fixed;
+	top: 0;
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
@@ -126,7 +127,7 @@ body {
 	font-size: 28px;
 }
 h2 {
-	margin: 30px 0;
+	padding: 30px 0;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: lighter;
@@ -180,7 +181,7 @@ h2 {
 }
 
 h3 {
-	margin: 20px 0;
+	padding: 20px 0;
 	font-weight: normal;
 	text-align: center;
 }
@@ -298,12 +299,18 @@ footer {
 	cursor: pointer;
 }
 .footer-down {
-	padding: 30px 0px;
+	padding: 15px 0px;
 	text-align: center;
 	font-size: 12px;
 }
 
 /* KONTAKT */
+.contact-title {
+	top: 45px;
+	margin-bottom: 15px;
+	padding-bottom: 30px;
+	position: relative;
+}
 
 .contact-up h3 {
 	text-transform: uppercase;
@@ -373,7 +380,7 @@ textarea {
 	}
 	h2 {
 		font-size: 20px;
-		margin: 15px 0;
+		padding: 15px 0;
 	}
 	.nav-links {
 		display: none;
@@ -474,7 +481,7 @@ textarea {
 	}
 	h2 {
 		font-size: 20px;
-		margin: 15px 0;
+		padding: 15px 0;
 	}
 
 	.nav-desktop {

@@ -1,19 +1,27 @@
+import React from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
-import AboutUs from './components/AboutUs'
-import Footer from './components/Footer'
-import Home from './components/Home'
-import NavBar from './components/NavBar'
-import Offers from './components/Offers'
+import ErrorPage from './error-page'
+import Contact from './routes/Contact'
+import Root from './routes/root'
+
+const router = createBrowserRouter([
+	{
+		path: '/',
+		element: <Root />,
+		errorElement: <ErrorPage />
+	},
+	{
+		path: '/contact',
+		element: <Contact />
+	}
+])
 
 function App() {
 	return (
-		<>
-			<NavBar />
-			<Home />
-			<AboutUs />
-			<Offers />
-			<Footer />
-		</>
+		<React.StrictMode>
+			<RouterProvider router={router} />
+		</React.StrictMode>
 	)
 }
 

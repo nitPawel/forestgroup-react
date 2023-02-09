@@ -32,10 +32,10 @@ export const offersOptions = [
 ]
 
 export const navLinks = [
-	{ id: 1, href: '#home', text: 'Home' },
-	{ id: 2, href: '#about-us', text: 'O nas' },
-	{ id: 3, href: '#offers', text: 'Oferta' },
-	{ id: 4, href: 'contact.html', text: 'Kontakt' },
+	{ id: 1, href: '/', text: 'Home' },
+	{ id: 2, href: '/#about-us', text: 'O nas' },
+	{ id: 3, href: '/#offers', text: 'Oferta' },
+	{ id: 4, href: '/contact', text: 'Kontakt' },
 ]
 
 export const footerCards = [
