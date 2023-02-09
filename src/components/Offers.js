@@ -1,6 +1,7 @@
 // import OffersBox from './OffersBox'
 import { offers } from '../data'
 import OffersOptions from './OffersOptions'
+import { Link } from 'react-router-dom'
 
 const Offers = () => {
 	return (
@@ -27,7 +28,8 @@ const Offers = () => {
 			</div>
 			<div className='more-btn'>
 				<div className=' box-button more-btn'>
-					<a href='offers.html'>Więcej </a>
+					{/* <Link to={'/'} className='nav-text'><i className='fas fa-tree'></i>Forest</Link>  */}
+					<Link to={'/offers'}>Więcej </Link>
 				</div>
 			</div>
 		</section>

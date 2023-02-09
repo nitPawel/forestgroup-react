@@ -8,11 +8,7 @@ const NavBar = () => {
 				<div className='nav-logo'>
 					<p className='nav-text'>
 						<Link to={'/'} className='nav-text'><i className='fas fa-tree'></i>Forest</Link> 
-						{/* <Link to={`contacts/1`}>Your Name</Link> */}
-						{/* <a href='#home' className='nav-text'>
-							
-						</a> */}
-					</p>
+						</p>
 				</div>
 				<div className='nav-links'>
 					<NavLinks linksClass={'nav-bar'} />
