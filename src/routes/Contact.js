@@ -1,13 +1,11 @@
 import ContactMap from '../components/ContactMap'
 import Footer from '../components/Footer'
-import Home from '../components/Home'
 import NavBar from '../components/NavBar'
 
 const Contact = () => {
 	return (
 		<>
 			<NavBar />
-			{/* <Home/> */}
 
 			<h2 className='contact-title'>Kontakt</h2>
 			<div className='contact-up'>

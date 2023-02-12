@@ -1,13 +1,13 @@
 import { navLinks } from '../data'
 
-const NavLinks = ({linksClass}) => {
+const NavLinks = ({ linksClass, handler }) => {
 	return (
 		<>
 			{navLinks.map(link => {
 				const { id, href, text } = link
 
 				return (
-					<a key={id} href={href} className={linksClass}>
+					<a onClick={handler} key={id} href={href} className={linksClass}>
 						{text}
 					</a>
 				)
