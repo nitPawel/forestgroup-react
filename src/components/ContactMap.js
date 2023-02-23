@@ -17,15 +17,14 @@ function MyComponent() {
 		googleMapsApiKey: 'AIzaSyA3ttIebNdh51TBHaiZti7gnPw3HzYCxWs',
 	})
 
+	// eslint-disable-next-line no-unused-vars
 	const [map, setMap] = React.useState(null)
 
 	const onLoad = React.useCallback(function callback(map) {
-		// This is just an example of getting and using the map instance!!! don't just blindly copy!
 		const bounds = new window.google.maps.LatLngBounds(center)
 		map.fitBounds(bounds)
 
 		setMap(map)
-        
 	}, [])
 
 	const onUnmount = React.useCallback(function callback(map) {
