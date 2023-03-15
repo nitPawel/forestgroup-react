@@ -1,7 +1,8 @@
 // import OffersBox from './OffersBox'
 import { offers } from '../data'
-import OffersOptions from './OffersOptions'
+// import OffersOptions from './OffersOptions'
 import { Link } from 'react-router-dom'
+import MoreOffers from '../routes/MoreOffers'
 
 const Offers = () => {
 	return (
@@ -12,14 +13,22 @@ const Offers = () => {
 			</div>
 			<div className='offers-boxes'>
 				{offers.map(offer => {
-					const { key, name, price } = offer
+					const { key, name, price, options } = offer
 
 					return (
 						<div className='box' key={key}>
 							<p className='box-name'>{name}</p>
 							<p className='box-price'>${price}</p>
 							<div className='box-options'>
-								<OffersOptions />
+								{options.map((option1, index) => {
+									const { option, style } = option1
+									return (
+										<p key={index} className={style === 'unactive' ? 'unactive' : null}>
+											{style === 'unactive' ? <i className='fas fa-times'></i> : <i className='fas fa-check'></i>}
+											{option}
+										</p>
+									)
+								})}
 							</div>
 							<button className='box-button'>Wybierz</button>
 						</div>
@@ -28,8 +37,9 @@ const Offers = () => {
 			</div>
 			<div className='more-btn'>
 				<div className=' box-button more-btn'>
-					{/* <Link to={'/'} className='nav-text'><i className='fas fa-tree'></i>Forest</Link>  */}
-					<Link to={'/offers'}>Więcej </Link>
+					<Link to='/offers' element={<MoreOffers />}>
+						Więcej{' '}
+					</Link>
 				</div>
 			</div>
 		</section>

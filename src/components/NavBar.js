@@ -1,12 +1,12 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import NavLinks from './NavLinks'
 
 const NavBar = () => {
-	const handleNavMobile = () => {
-		const navMobile = document.querySelector('.nav-mobile')
-		navMobile.classList.toggle('active')
+	const [showLinks, setShowLinks] = useState(false)
 
-		console.log('klik')
+	const handleBarsMenu = () => {
+		setShowLinks(!showLinks)
 	}
 
 	return (
@@ -14,7 +14,7 @@ const NavBar = () => {
 			<div className='nav-desktop'>
 				<div className='nav-logo'>
 					<p className='nav-text'>
-						<Link to={'/'} className='nav-text'>
+						<Link to='/' className='nav-text'>
 							<i className='fas fa-tree'></i>Forest
 						</Link>
 					</p>
@@ -22,18 +22,22 @@ const NavBar = () => {
 				<div className='nav-links'>
 					<NavLinks linksClass={'nav-bar'} />
 				</div>
-				<button onClick={handleNavMobile} className='bars'>
+				<button onClick={handleBarsMenu} className='bars'>
 					<i className='fas fa-bars'></i>
 				</button>
+				{/* <button onClick={handleNavMobile} className='bars'>
+					<i className='fas fa-bars'></i>
+				</button> */}
 			</div>
-			<div className='nav-mobile active'>
+			<div className={showLinks ? 'nav-mobile' : 'nav-mobile active'}>
+				{/* <div className='nav-mobile active'> */}
 				<div className='nav-logo--mobile'>
 					<p className='nav-text--mobile'>
 						<i className='fas fa-tree'></i>Forest
 					</p>
 				</div>
 				<div className='nav-links--mobile'>
-					<NavLinks linksClass={'nav-bar--mobile'} handler={handleNavMobile} />
+					<NavLinks linksClass={'nav-bar--mobile'} handler={handleBarsMenu} />
 				</div>
 			</div>
 		</nav>

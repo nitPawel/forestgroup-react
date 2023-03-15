@@ -1,8 +1,6 @@
-import { offers, offersOptions } from '../data'
+import { offersOptions } from '../data'
 
 const OffersOptions = () => {
-	console.log(offers.active)
-
 	return (
 		<>
 			{offersOptions.map(offer => {

@@ -1,11 +1,11 @@
 import ContactMap from '../components/ContactMap'
 import Footer from '../components/Footer'
-import NavBar from '../components/NavBar'
+import NavbarOC from '../components/NavbarOC'
 
 const Contact = () => {
 	return (
 		<>
-			<NavBar />
+			<NavbarOC/>
 
 			<h2 className='contact-title'>Kontakt</h2>
 			<div className='contact-up'>

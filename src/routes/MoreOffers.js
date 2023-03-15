@@ -1,12 +1,12 @@
 import Footer from '../components/Footer'
-import NavBar from '../components/NavBar'
+import NavbarOC from '../components/NavbarOC'
 
 const MoreOffers = () => {
 	return (
 		<>
-			<NavBar />
+			<NavbarOC/>
 			<h2 className='contact-title'>Przepraszamy</h2>
-			<div>strona w budowie</div>
+			<h3>strona w budowie</h3>
 			<Footer />
 		</>
 	)

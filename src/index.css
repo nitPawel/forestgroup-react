@@ -69,9 +69,11 @@ body {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+	overflow: hidden;
 }
 .active {
 	transform: translateX(-102%);
+	/* transform: translateX(102%); */
 	display: none;
 }
 .nav-logo--mobile {
@@ -215,8 +217,14 @@ h3 {
 	display: flex;
 	text-decoration: none;
 }
-.box i {
+.box .fa-check {
 	color: green;
+	margin-right: 5px;
+	padding: 5px 5px;
+	font-size: 10px;
+}
+.box .fa-times {
+	color: grey;
 	margin-right: 5px;
 	padding: 5px 5px;
 	font-size: 10px;
@@ -244,7 +252,7 @@ h3 {
 	transition: background-color 0.3s;
 }
 .box-button:hover {
-	background-color: rgb(62, 247, 62);
+	background-color: rgba(7, 92, 7, 0.82);
 }
 .more-btn {
 	margin-bottom: 15px;
@@ -337,6 +345,9 @@ footer {
 	justify-content: space-around;
 	width: 900px;
 	padding: 20px 0;
+}
+.contact-box i {
+	padding: 0 15px;
 }
 .phone,
 .mail {

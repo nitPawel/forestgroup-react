@@ -1,7 +1,40 @@
 export const offers = [
-	{ key: 1, name: 'demo', price: 0 },
-	{ key: 2, name: 'standard', price: 99 },
-	{ key: 3, name: 'premium', price: 299 },
+	{
+		key: 1,
+		name: 'demo',
+		price: 0,
+		options: [
+			{ option: 'opcja 1 w pakiecie', style: '' },
+			{ option: 'opcja 2 w pakiecie', style: '' },
+			{ option: 'opcja 3 w pakiecie', style: 'unactive' },
+			{ option: 'opcja 4 w pakiecie', style: 'unactive' },
+			{ option: 'opcja 5 w pakiecie', style: 'unactive' },
+		],
+	},
+	{
+		key: 2,
+		name: 'standard',
+		price: 99,
+		options: [
+			{ option: 'opcja 1 w pakiecie', style: '' },
+			{ option: 'opcja 2 w pakiecie', style: '' },
+			{ option: 'opcja 3 w pakiecie', style: '' },
+			{ option: 'opcja 4 w pakiecie', style: 'unactive' },
+			{ option: 'opcja 5 w pakiecie', style: 'unactive' },
+		],
+	},
+	{
+		key: 3,
+		name: 'premium',
+		price: 299,
+		options: [
+			{ option: 'opcja 1 w pakiecie', style: '' },
+			{ option: 'opcja 2 w pakiecie', style: '' },
+			{ option: 'opcja 3 w pakiecie', style: '' },
+			{ option: 'opcja 4 w pakiecie', style: '' },
+			{ option: 'opcja 5 w pakiecie', style: '' },
+		],
+	},
 ]
 export const offersOptions = [
 	{
@@ -33,8 +66,10 @@ export const offersOptions = [
 
 export const navLinks = [
 	{ id: 1, href: '/', text: 'Home' },
+	// { id: 2, href: '#about-us', text: 'O nas' },
 	{ id: 2, href: '#about-us', text: 'O nas' },
-	{ id: 3, href: '#offers', text: 'Oferta' },
+	{ id: 3, href: '/offers', text: 'Oferta' },
+	// { id: 3, href: '#offers', text: 'Oferta' },
 	{ id: 4, href: '/contact', text: 'Kontakt' },
 ]
 

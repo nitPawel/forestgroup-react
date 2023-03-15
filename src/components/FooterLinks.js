@@ -9,8 +9,8 @@ const FooterLinks = () => {
 					<div key={card.id} className='footer-card'>
 						<p>{card.title}</p>
 						<ul>
-							{card.links.map(option => {
-								return <li>{option}</li>
+							{card.links.map((option, index) => {
+								return <li key={index}>{option}</li>
 							})}
 						</ul>
 					</div>

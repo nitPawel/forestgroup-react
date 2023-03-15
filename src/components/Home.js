@@ -1,5 +1,9 @@
+import AboutUs from "./AboutUs";
+import Offers from "./Offers";
+
 const Home = () => {
     return (
+      <>
       
         <section id="home">
             <div className="hero-img">
@@ -11,6 +15,10 @@ const Home = () => {
 
             </div>
         </section>
+        <AboutUs/>
+        <Offers/>
+        
+      </>
     
 
     )

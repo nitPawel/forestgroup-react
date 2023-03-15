@@ -1,17 +1,20 @@
-import { useRouteError } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import NavbarOC from './components/NavbarOC'
 
 const ErrorPage = () => {
-	const error = useRouteError()
-	console.error(error)
-
 	return (
+		<>
+		<NavbarOC/>
 		<div id='error-page'>
-			<h1>Niestety!</h1>
-			<p>przepraszamy, ale wystąpił błąd, pracujemy nad tym aby to naprawić.</p>
-			<p>
-				<i>{error.statusText || error.message}</i>
-			</p>
+			<h2 className='contact-title'>Niestety!</h2>
+			<h3>przepraszamy, ale wystąpił błąd, pracujemy nad tym aby to naprawić.</h3>
+
+			<br />
+			<NavLink className='nav-bar' to='/'>
+				Wróć do strony głównej
+			</NavLink>
 		</div>
+		</>
 	)
 }
 export default ErrorPage
