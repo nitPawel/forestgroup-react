@@ -10,7 +10,7 @@ const ErrorPage = () => {
 				<h3>przepraszamy, ale wystąpił błąd, pracujemy nad tym aby to naprawić.</h3>
 
 				<br />
-				<Link className='nav-bar' to='forestgroup-react'>
+				<Link className='nav-bar' to='/'>
 					Wróć do strony głównej
 				</Link>
 			</div>

@@ -11,7 +11,7 @@ const NavbarOC = () => {
 			<div className='nav-desktop'>
 				<div className='nav-logo'>
 					<p className='nav-text'>
-						<Link to='forestgroup-react' className='nav-text'>
+						<Link to='/' className='nav-text'>
 							<i className='fas fa-tree'></i>Forest
 						</Link>
 					</p>
