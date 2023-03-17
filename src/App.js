@@ -11,11 +11,11 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path='/' element={<SharedLayout />}>
+				<Route path='forestgroup-react' element={<SharedLayout />}>
 					<Route index element={<Home />} />
 				</Route>
-				<Route path='offers' element={<MoreOffers />} />
-				<Route path='contact' element={<Contact />} />
+				<Route path='/offers' element={<MoreOffers />} />
+				<Route path='/contact' element={<Contact />} />
 				<Route path='*' element={<ErrorPage />} />
 			</Routes>
 		</BrowserRouter>

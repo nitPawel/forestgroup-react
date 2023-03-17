@@ -7,6 +7,7 @@ const MoreOffers = () => {
 			<NavbarOC/>
 			<h2 className='contact-title'>Przepraszamy</h2>
 			<h3>strona w budowie</h3>
+			<h3>Kolejne oferty pojawią się wkrótce</h3>
 			<Footer />
 		</>
 	)

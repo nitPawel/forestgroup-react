@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import NavLinks from './NavLinks'
 
 const NavBar = () => {
@@ -14,9 +14,9 @@ const NavBar = () => {
 			<div className='nav-desktop'>
 				<div className='nav-logo'>
 					<p className='nav-text'>
-						<Link to='/' className='nav-text'>
+						<NavLink to='/' className='nav-text'>
 							<i className='fas fa-tree'></i>Forest
-						</Link>
+						</NavLink>
 					</p>
 				</div>
 				<div className='nav-links'>
