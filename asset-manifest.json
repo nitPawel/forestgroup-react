@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/forestgroup-react/static/css/main.4a25fc1c.css",
-    "main.js": "/forestgroup-react/static/js/main.a1e93c5f.js",
+    "main.js": "/forestgroup-react/static/js/main.85a204b5.js",
     "static/media/jungle1920.jpg": "/forestgroup-react/static/media/jungle1920.17c8e94b6f84972ed770.jpg",
     "static/media/girl1920.jpg": "/forestgroup-react/static/media/girl1920.e11a9cd53ab7262516a2.jpg",
     "static/media/waters1280.jpg": "/forestgroup-react/static/media/waters1280.013951e9ad233eb2756f.jpg",
@@ -9,10 +9,10 @@
     "static/media/girl640.jpg": "/forestgroup-react/static/media/girl640.04a9f8006d50c609cdb3.jpg",
     "index.html": "/forestgroup-react/index.html",
     "main.4a25fc1c.css.map": "/forestgroup-react/static/css/main.4a25fc1c.css.map",
-    "main.a1e93c5f.js.map": "/forestgroup-react/static/js/main.a1e93c5f.js.map"
+    "main.85a204b5.js.map": "/forestgroup-react/static/js/main.85a204b5.js.map"
   },
   "entrypoints": [
     "static/css/main.4a25fc1c.css",
-    "static/js/main.a1e93c5f.js"
+    "static/js/main.85a204b5.js"
   ]
 }
